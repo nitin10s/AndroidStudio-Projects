@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basketball Score Counter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        />
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="0,1"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:id="@+id/tascore"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:id="@+id/tbscore"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ta1"
+                android:text="Team A + 1"></Button>
+
+            <Button
+                android:id="@+id/tb1"
+                android:text="Team B + 1"></Button>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ta2"
+                android:text="Team A + 2"></Button>
+
+            <Button
+                android:id="@+id/tb2"
+                android:text="Team B + 2"></Button>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ta3"
+                android:text="Team A + 3"></Button>
+
+            <Button
+                android:id="@+id/tb3"
+                android:text="Team B + 3"></Button>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:id="@+id/reset"
+    />
+
+</LinearLayout>
