@@ -1,2 +1,1 @@
-# AndroidStudio-Projects
-University Projects built on Android Studio
+Basic Android App Projects completed as Univeristy Assignments.
